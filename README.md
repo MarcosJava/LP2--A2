@@ -7,7 +7,7 @@ Professor Eddy Willians .<br>
 Universidade Veiga de Almeida - Tijuca <br>
 <br>
 
-Usando JSP-Servlet, JDBC.<br>
+Usando JSP-Servlet, JDBC (PostgreSQL).<br>
 
 Sistema de Compras : <br>
   -- Cliente CRUD.<br>

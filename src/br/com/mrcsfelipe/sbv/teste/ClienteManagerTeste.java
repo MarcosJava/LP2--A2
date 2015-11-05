@@ -24,7 +24,7 @@ public class ClienteManagerTeste {
 	
 	@Ignore
 	@Test
-	public void salvarCliente(){
+	public void salvarClientexxxx(){
 		try {
 			Cliente cliente = 
 					new Cliente(null, 
