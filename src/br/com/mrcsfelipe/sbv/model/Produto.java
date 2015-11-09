@@ -6,15 +6,43 @@ public class Produto {
 
 	private Long id;
 	private String nome;
+	private String modelo;
 	private String marca;
-	private Modelo modelo;
 	private Date dataFabricacao;
 	private Double valor;
 	private Integer quantidadeEstoque;
 	
 	public Produto() {
-		// TODO Auto-generated constructor stub
 	}
+
+	
+	
+	public Produto(String nome, String modelo, String marca,
+			Date dataFabricacao, Double valor, Integer quantidadeEstoque) {
+		super();
+		this.nome = nome;
+		this.modelo = modelo;
+		this.marca = marca;
+		this.dataFabricacao = dataFabricacao;
+		this.valor = valor;
+		this.quantidadeEstoque = quantidadeEstoque;
+	}
+
+
+
+	public Produto(Long id, String nome, String modelo, String marca,
+			Date dataFabricacao, Double valor, Integer quantidadeEstoque) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.modelo = modelo;
+		this.marca = marca;
+		this.dataFabricacao = dataFabricacao;
+		this.valor = valor;
+		this.quantidadeEstoque = quantidadeEstoque;
+	}
+
+
 
 	public Long getId() {
 		return id;
@@ -32,20 +60,21 @@ public class Produto {
 		this.nome = nome;
 	}
 
+
+	public String getModelo() {
+		return modelo;
+	}
+
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+
 	public String getMarca() {
 		return marca;
 	}
 
 	public void setMarca(String marca) {
 		this.marca = marca;
-	}
-
-	public Modelo getModelo() {
-		return modelo;
-	}
-
-	public void setModelo(Modelo modelo) {
-		this.modelo = modelo;
 	}
 
 	public Date getDataFabricacao() {
@@ -74,11 +103,13 @@ public class Produto {
 
 	@Override
 	public String toString() {
-		return "Produto [id=" + id + ", nome=" + nome + ", marca=" + marca
-				+ ", modelo=" + modelo + ", dataFabricacao=" + dataFabricacao
+		return "Produto [id=" + id + ", nome=" + nome + ", modelo=" + modelo
+				+ ", marca=" + marca + ", dataFabricacao=" + dataFabricacao
 				+ ", valor=" + valor + ", quantidadeEstoque="
 				+ quantidadeEstoque + "]";
 	}
+
+	
 	
 	
 	

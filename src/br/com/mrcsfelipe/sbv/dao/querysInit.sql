@@ -1,3 +1,7 @@
+#Nome do banco lp2a2
+#Alterar a classe DAO
+
+
 CREATE SEQUENCE seq_cliente;
 CREATE SEQUENCE seq_produto;
 

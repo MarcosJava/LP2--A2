@@ -1,6 +1,8 @@
 package br.com.mrcsfelipe.sbv.teste;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
+import java.util.List;
 
 import org.junit.Before;
 import org.junit.Ignore;
@@ -123,8 +125,21 @@ public class ClienteManagerTeste {
 		
 		assertEquals(saidaExperada, saidaScript);
 		
-		
 	}
+	
+	@Test
+	public void listandoClientes(){
+		try {
+			List<Cliente> clientes = manager.getAllClientes();
+			for(Cliente c : clientes){
+				System.out.println(c.toString());
+			}
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+	// TDD - Test Drive Development 
+	
 	
 	
 
